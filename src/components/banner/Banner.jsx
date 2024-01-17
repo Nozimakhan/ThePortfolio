@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.scss';
-import hero from '../../assets/images/hero.png';
+import hero from '../../assets/images/banner1.PNG';
 import { SlArrowRight } from "react-icons/sl";
 import Navbar from '../navbar/Navbar';
 import Subnav from '../subnav/Subnav';
