@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'ivymode';
+    src: local('ivymode'),
+        url('../../assets/fonts/ivy-mode-6.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    max-height: 791px;
+    background-color: #837471;
+    position: relative;
+
+    .container {
+        .banner__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1300px;
+            margin: 0 auto;
+            margin-top: -100px;
+            padding: 0 50px;
+
+            .banner__content {
+                max-width: 680px;
+
+                h1 {
+                    font-family: 'ivymode';
+                    color: #fff;
+                    font-size: 60px;
+                    letter-spacing: 4px;
+                }
+
+                p {
+                    font-family: 'Manrope', sans-serif;
+                    font-size: 25px;
+                    color: #cccccc;
+                }
+
+                .btns {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 50px;
+                    margin-top: 70px;
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 0 10px;
+                        font-family: 'Manrope', sans-serif;
+                        font-size: 20px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        cursor: pointer;
+
+                        svg {
+                            font-size: 15px;
+                            color: #cccccc;
+                        }
+                    }
+
+                    button:hover {
+                        svg {
+                            position: relative;
+                            animation-name: arrow;
+                            animation-duration: 4s;
+                            color: #fff;
+                        }
+
+                        @keyframes arrow {
+                            0% {
+                                left: 0;
+                                top: 0;
+                            }
+
+                            25% {
+                                left: 20px;
+                                top: 0;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .banner__img{
+                img {
+                    width: auto;
+                    height: 100vh;
+                    max-height: 750px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1149px){
+    .banner{
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    max-width: 680px;
+                    h1{
+                        font-size: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1132px){
+    .banner{
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    max-width: 680px;
+                    h1{
+                        font-size: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1106px){
+    .banner{
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    h1{
+                        font-size: 50px;
+                    }
+                    p{
+                        font-size: 23px;
+                    }
+                    .btns{
+                        button{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1048px){
+    .banner{
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    h1{
+                        font-size: 45px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .banner{
+        max-height: 650px;
+        .container{
+            .banner__wrapper{
+                .banner__img{
+                    img{
+                        max-height: 650px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .banner{
+        max-height: 650px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    h1{
+                        font-size: 38px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 570px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .banner{
+        max-height: 560px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    h1{
+                        font-size: 31px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 520px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .banner{
+        max-height: 500px;
+        .container{
+            .banner__wrapper{
+                .banner__img{
+                    img{
+                        max-height: 450px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .banner{
+        max-height: 500px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    max-width: 580px;
+                    h1{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    .btns{
+                        button{
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 450px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .banner{
+        max-height: 459px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    max-width: 580px;
+                    h1{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    .btns{
+                        button{
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .banner{
+        max-height: 720px;
+        .container{
+            .banner__wrapper{
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: -60px;
+                .banner__content{
+                    background-color: #1e1d1d6e;
+                    backdrop-filter: blur(2px);
+                    border-radius: 25px;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 55px;
+                    max-width: 480px;
+                    padding: 20px;
+                    h1{
+                        font-size: 40px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    .btns{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 70px;
+                        button{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        width: auto;
+                        height: 100vh;
+                        max-height: 718px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 478px){
+    .banner{
+        max-height: 650px;
+        .container{
+            .banner__wrapper{
+                // display: flex;
+                // flex-direction: column-reverse;
+                // margin-top: -60px;
+                .banner__content{
+                    bottom: 35px;
+                    max-width: 380px;
+                    h1{
+                        font-size: 32px;
+                    }
+                    .btns{
+                        button{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 648px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .banner{
+        max-height: 625px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    bottom: 35px;
+                    max-width: 380px;
+                    h1{
+                        font-size: 32px;
+                    }
+                    .btns{
+                        button{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 622px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .banner{
+        max-height: 590px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    bottom: 35px;
+                    max-width: 380px;
+                    h1{
+                        font-size: 28px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                    .btns{
+                        button{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 587px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .banner{
+        max-height: 560px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    bottom: 35px;
+                    max-width: 380px;
+                    h1{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    .btns{
+                        button{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 557px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: 376px){
+//     .banner{
+//         max-height: 530px;
+//         .container{
+//             .banner__wrapper{
+//                 .banner__content{
+//                     bottom: 35px;
+//                     max-width: 380px;
+//                     h1{
+//                         font-size: 25px;
+//                     }
+//                     p{
+//                         font-size: 16px;
+//                     }
+//                     .btns{
+//                         button{
+//                             font-size: 14px;
+//                         }
+//                     }
+//                 }
+//                 .banner__img{
+//                     img{
+//                         max-height: 527px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media only screen and (max-width: 370px){
+    .banner{
+        max-height: 540px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    bottom: 35px;
+                    max-width: 380px;
+                    h1{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    .btns{
+                        button{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 537px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 357px){
+    .banner{
+        max-height: 401px;
+        .container{
+            .banner__wrapper{
+                .banner__content{
+                    bottom: 35px;
+                    max-width: 240px;
+                    h1{
+                        font-size: 20px;
+                        letter-spacing: 1.5px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    .btns{
+                        gap: 0 30px;
+                        margin-top: 30px;
+                        button{
+                            font-size: 10px;
+                            svg{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+                .banner__img{
+                    img{
+                        max-height: 417px;
+                    }
+                }
+            }
+        }
+    }
+}

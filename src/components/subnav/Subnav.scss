@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+@font-face {
+    font-family: 'ivymode';
+    src: local('ivymode'),
+        url('../../assets/fonts/ivy-mode-6.ttf') format('truetype');
+}
+
+.subnav-bg {
+    background-color: #000;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+
+    .subnav {
+        display: flex;
+        align-items: first baseline;
+        justify-content: space-between;
+        padding-top: 35px;
+        height: 150px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'ivymode';
+            font-size: 30px;
+            letter-spacing: 1px;
+            padding-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            border-bottom: 2px solid #fff;
+            border-radius: 2px;
+            transform: scaleX(1);
+        }
+    }
+}
+
+@media only screen and (max-width: 1112px) {
+    .subnav-bg {
+        background-color: #000;
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        bottom: 0;
+
+        .subnav {
+            display: flex;
+            align-items: first baseline;
+            justify-content: space-between;
+            padding-top: 35px;
+            height: 130px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-family: 'ivymode';
+                font-size: 25px;
+                letter-spacing: 1px;
+                padding-bottom: 10px;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                border-bottom: 2px solid #fff;
+                border-radius: 2px;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .subnav-bg{
+        display: none;
+    }
+}
