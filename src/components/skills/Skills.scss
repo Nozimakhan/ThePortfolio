@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'ivymode';
+    src: local('ivymode'),
+        url('../../assets/fonts/ivy-mode-6.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+.skills{
+    background-color: black;
+    // max-height: 750px;
+    height: 100%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    .container{
+        .skills__wrapper{
+            h2{
+                font-family: 'ivymode';
+                font-size: 45px;
+                color: white;
+                letter-spacing: 1.5px;
+                text-align: center;
+            }
+            .cart__wrapper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-top: 50px;
+                .cart{
+                    box-shadow: rgba(96, 96, 96, 0.595) 0px 7px 29px 0px;
+                    background-color: #5757575d;
+                    width: 210px;
+                    height: 150px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px 0;
+                    h4{
+                        font-family: 'Manrope', sans-serif;
+                        color: #E8DEDC;
+                    }
+                    .circle{
+                        border: 4px solid #816b66;
+                        border-radius: 50%;
+                        padding: 20px;
+                        svg{
+                            font-size: 40px;
+                            color: #E8DEDC;;
+                        }
+                    }
+                }
+                .cart:hover{
+                    background-color: #80808081;
+                    transition: 0.7s;
+                }
+            }
+        }
+    }
+    
+}

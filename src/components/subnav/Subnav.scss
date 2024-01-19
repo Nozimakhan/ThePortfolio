@@ -11,7 +11,7 @@
     width: 100%;
     height: 150px;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
 
     .subnav {
         display: flex;
@@ -58,6 +58,74 @@
                 color: #fff;
                 font-family: 'ivymode';
                 font-size: 25px;
+                letter-spacing: 1px;
+                padding-bottom: 10px;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                border-bottom: 2px solid #fff;
+                border-radius: 2px;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .subnav-bg {
+        background-color: black;
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        bottom: 0;
+
+        .subnav {
+            display: flex;
+            align-items: first baseline;
+            justify-content: space-between;
+            padding-top: 35px;
+            height: 130px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-family: 'ivymode';
+                font-size: 25px;
+                letter-spacing: 1px;
+                padding-bottom: 10px;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                border-bottom: 2px solid #fff;
+                border-radius: 2px;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .subnav-bg {
+        background-color: black;
+        width: 100%;
+        height: 110px;
+        position: absolute;
+        bottom: 0;
+
+        .subnav {
+            display: flex;
+            align-items: first baseline;
+            justify-content: space-between;
+            padding-top: 35px;
+            height: 110px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-family: 'ivymode';
+                font-size: 20px;
                 letter-spacing: 1px;
                 padding-bottom: 10px;
                 transition: 0.3s;

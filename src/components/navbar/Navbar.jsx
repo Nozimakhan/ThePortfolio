@@ -8,6 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { VscMenu } from "react-icons/vsc";
 import { VscClose } from "react-icons/vsc";
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {

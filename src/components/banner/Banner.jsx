@@ -19,6 +19,7 @@ const Banner = () => {
                             <button>Hire me <SlArrowRight /></button>
                         </div>
                     </div>
+                    <div className="banner-bg"></div>
                     <div className="banner__img">
                         <img src={hero} alt="" />
                     </div>
